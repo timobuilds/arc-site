@@ -17,7 +17,7 @@ html {
 body {
   margin: 0;
   min-height: 100vh;
-  font-family: 'JetBrains Mono', 'SF Mono', Consolas, monospace;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   background: var(--bg);
   color: var(--text);
   overflow-x: hidden;
@@ -53,7 +53,7 @@ body {
 
 .logo {
   margin: 0 auto;
-  font-family: inherit;
+  font-family: 'JetBrains Mono', 'SF Mono', Consolas, monospace;
   font-size: clamp(0.24rem, 1.15vw, 0.65rem);
   line-height: 1.35;
   letter-spacing: 0.02em;
@@ -64,4 +64,55 @@ body {
   width: max-content;
   max-width: 100%;
   text-align: center;
+}
+
+.tagline {
+  text-align: center;
+  max-width: 28rem;
+  padding: 0 1rem;
+}
+
+.tagline h2 {
+  margin: 0 0 0.5rem;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: clamp(1.1rem, 3vw, 1.5rem);
+  font-weight: 600;
+  color: var(--text);
+}
+
+.tagline p {
+  margin: 0;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.tagline p + p {
+  margin-top: 0.75rem;
+}
+
+.keywords {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0 1.5rem;
+  margin-top: 40px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.keyword {
+  color: rgba(255, 255, 255, 0.25);
+  filter: blur(3px);
+  transition: filter 0.25s ease, color 0.25s ease;
+}
+
+.keyword:hover {
+  filter: blur(0);
+  color: rgba(255, 255, 255, 0.9);
 }
