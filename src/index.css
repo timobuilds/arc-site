@@ -20,10 +20,13 @@ body {
   font-family: 'JetBrains Mono', 'SF Mono', Consolas, monospace;
   background: var(--bg);
   color: var(--text);
+  overflow-x: hidden;
 }
 
 .app {
   min-height: 100vh;
+  width: 100%;
+  min-width: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -36,6 +39,7 @@ body {
   width: clamp(60px, 12vw, 100px);
   height: auto;
   display: block;
+  flex-shrink: 0;
 }
 
 .logo-wrap {
@@ -43,16 +47,19 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
+  min-width: 0;
+  padding: 0 0.5rem;
 }
 
 .logo {
-  margin: 0;
+  margin: 0 auto;
   font-family: inherit;
-  font-size: clamp(0.4rem, 1.4vw, 0.65rem);
+  font-size: clamp(0.3rem, 2.2vw, 0.65rem);
   line-height: 1.35;
   letter-spacing: 0.02em;
   white-space: pre;
-  overflow: auto;
+  overflow-x: auto;
+  overflow-y: visible;
   color: var(--text);
   width: max-content;
   max-width: 100%;
