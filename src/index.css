@@ -20,7 +20,9 @@ html {
 body {
   margin: 0;
   height: 100vh;
+  height: 100dvh;
   min-height: 100vh;
+  min-height: 100dvh;
   overflow: hidden;
   overscroll-behavior: none;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -36,6 +38,7 @@ body {
 .app {
   height: 100%;
   min-height: 100vh;
+  min-height: 100dvh;
   width: 100%;
   min-width: 0;
   display: flex;
